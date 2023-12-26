@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#a bash script that displays q specific fields from ect passwd
+
+while IFS=: read -r username _ userid _ _ home _; do
+  echo "$username:$userid:$home"
+done < /etc/passwd
