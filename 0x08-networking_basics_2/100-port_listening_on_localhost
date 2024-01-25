@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Connecting to localhost
+nc -l localhost 98
